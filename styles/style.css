@@ -1,5 +1,121 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    margin-inline: var(--page-margin);
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.header {
+
+}
+
+/* if screen > 768 0 0 60px */
+
+.decorated-zone {
+
+}
+
+.header__rec {
+
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+
+}
+
+.header__theme-menu-item {
+
+}
+
+.header__theme-menu-button {
+
+}
+
+.header__theme-menu-button_active {
+
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_dark {
+
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    line-height: clamp(6rem, 4.7721rem + 5.2388vw, 8.125rem);
+    color: var(--header__title-text-color);
+    text-shadow: 4px 4px var(--header__title-shadow-color);
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.header__subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: auto;
+    inline-size: max(355px ,calc((100vi - 2 * var(--page-margin)) / 2));
+
+}
+
+.header__subtitle-text {
+    margin-block: 0;
+}
+
+.main {
+    margin-inline: 10px;
+}
+
+/* Margin 20px if screen > 768px*/
+
+.content__text-block {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.content__title {
+    color: var(--decoration-color);
+}
+
+.content__subtitle {
+    font-weight: 400;
+}
+
+.decorated-text {
+    color: var(--decorated-text-color);
+    background-color: var(--decoration-color);
+}
+
+.content__paragraph {
+    color: var(--text-color);
+}
+
+.text-link {
+    color: var(--text-color);
+    text-shadow: 2px 1px var(--decoration-color);
+    text-decoration: none;
+}
+
+.content__image-block {
+
+}
+
+.footer {
+
 }
