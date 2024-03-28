@@ -131,7 +131,7 @@
     align-self: center;
     block-size: fit-content;
     margin-inline-start: auto;
-    inline-size: max(355px ,calc((100vi - 2 * var(--page-padding)) / 2));
+    inline-size: max(355px ,calc((100vi - 2 * var(--section-padding)) / 2));
 
 }
 
@@ -141,7 +141,7 @@
 
 .main {
     margin-block: 40px;
-    padding: var(--section-padding);
+    padding-inline: var(--section-padding);
 }
 
 /* Margin 60px if screen > 768px*/
