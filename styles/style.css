@@ -94,6 +94,20 @@
     border: none;
 }
 
+.header__theme-menu-button:hover {
+    cursor: pointer;
+    border: 1px solid var(--hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+    border-block-end: 1px solid var(--decor-color);
+}
+
+.header__theme-menu-button:disabled {
+    cursor: default;
+    border: 1px solid var(--decor-color);
+}
+
 .header__theme-menu-button_active {
     border: 1px solid var(--decor-color);
 }
@@ -180,8 +194,16 @@
 
 .text-link {
     color: var(--text-color);
-    text-shadow: 2px 1px var(--accent-color);
+    text-shadow: 2px 2px var(--accent-color);
     text-decoration: none;
+}
+
+.text-link:hover {
+    border-block-end: 1px solid var(--text-color);
+}
+
+.text-link:focus-visible {
+    outline: 1px solid var(--text-color);
 }
 
 .content__image-block {
