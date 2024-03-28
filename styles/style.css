@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    padding: var(--page-padding);
     font-family: 'IBM Plex Mono', sans-serif;
     background-image: var(--background-image);
     background-size: cover;
@@ -10,6 +9,7 @@
 }
 
 .header {
+    padding: var(--section-padding);
     position: relative;
     display: grid;
     block-size: 100vh;
@@ -23,8 +23,8 @@
     content: '';
     inline-size: 25px;
     block-size: 25px;
-    inset-block-start: 0;
-    inset-inline-end: 0;
+    inset-block-start: 10px;
+    inset-inline-end: 10px;
     border-block-start: 1px solid var(--accent-color);
     border-inline-end: 1px solid var(--accent-color);
 }
@@ -34,15 +34,16 @@
     content: '';
     inline-size: 25px;
     block-size: 25px;
-    inset-block-end: 0;
-    inset-inline-start: 0;
+    inset-block-end: 10px;
+    inset-inline-start: 10px;
     border-block-end: 1px solid var(--accent-color);
     border-inline-start: 1px solid var(--accent-color);
 }
 
 .header__rec {
     position: absolute;
-    margin-inline-end: 9px;
+    margin-block-start: 10px;
+    margin-inline-end: 19px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -63,18 +64,6 @@
     border-radius: 50%;
     box-shadow: 0 0 4px 1px var(--accent-color);
 }
-
-/*
-display: block;
-  content: '';
-  width: 9px;
-  height: 9px;
-  margin-left: 10px;
-  margin-right: 9px;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px #ff0070;
-  border-radius: 50%;
-*/
 
 .header__theme-menu {
     display: flex;
@@ -152,6 +141,7 @@ display: block;
 
 .main {
     margin-block: 40px;
+    padding: var(--section-padding);
 }
 
 /* Margin 60px if screen > 768px*/
@@ -205,6 +195,7 @@ display: block;
 }
 
 .footer {
+    padding: var(--section-padding);
     display: flex;
     flex-direction: column;
     justify-content: center;
