@@ -14,3 +14,9 @@
 
     --section-padding: 10px;
 }
+
+@media (min-width: 768px) {
+    :root {
+        --section-padding: 20px;
+    }
+}
