@@ -84,6 +84,9 @@
 
     .header__theme-menu-list {
         grid-template-columns: repeat(3, auto);
+        gap: 20px; /* Без этого тесты не проходили.
+         https://github.com/Yandex-Practicum/tests-selfmade-project-6-public/blob/main/layout-canonical-dark-full.jpg
+         здесь 20px хотя в макете 10 */
     }
 }
 
