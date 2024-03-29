@@ -36,15 +36,17 @@
     border-inline-start: 1px solid var(--accent-color);
 }
 
-.theme_dark .header__rec {
+.header__rec {
+    display: var(--display-rec);
     position: absolute;
-    margin-block-start: calc(6px + var(--section-padding));
+    margin-block-start: var(--section-padding);
     margin-inline-end: calc(9px + var(--section-padding));
-    display: flex;
     align-items: center;
     gap: 10px;
     color: var(--accent-color);
     inset-inline-end: 0;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .header__rec:before {
