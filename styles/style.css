@@ -38,8 +38,8 @@
 
 .header__rec {
     position: absolute;
-    margin-block-start: 10px;
-    margin-inline-end: 19px;
+    margin-block-start: var(--section-padding);
+    margin-inline-end: calc(9px + var(--section-padding));
     display: flex;
     align-items: center;
     gap: 10px;
@@ -90,6 +90,7 @@
 }
 
 .header__theme-menu-button {
+    block-size: 26px;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
