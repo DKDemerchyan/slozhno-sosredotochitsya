@@ -39,23 +39,17 @@
 .header__rec {
     display: var(--display-rec);
     position: absolute;
-    margin-block-start: var(--section-padding);
-    margin-inline-end: calc(9px + var(--section-padding));
+    inset-block-start: var(--section-padding);
+    inset-inline-end: calc(9px + var(--section-padding));
     align-items: center;
     gap: 10px;
     color: var(--accent-color);
-    inset-inline-end: 0;
     font-size: 18px;
     line-height: 25px;
 }
 
-.header__rec:before {
-    content: 'REC';
-}
-
 .header__rec:after {
     content: '';
-    display: block;
     inline-size: 9px;
     block-size: 9px;
     background-color: var(--accent-color);
@@ -84,9 +78,9 @@
 
     .header__theme-menu-list {
         grid-template-columns: repeat(3, auto);
-        gap: 20px; /* Без этого тесты не проходили.
-         https://github.com/Yandex-Practicum/tests-selfmade-project-6-public/blob/main/layout-canonical-dark-full.jpg
-         здесь 20px хотя в макете 10 */
+        /*gap: 20px; !* Без этого тесты не проходили.*/
+        /* https://github.com/Yandex-Practicum/tests-selfmade-project-6-public/blob/main/layout-canonical-dark-full.jpg*/
+        /* здесь 20px хотя в макете 10 *!*/
     }
 }
 
@@ -95,6 +89,7 @@
 }
 
 .header__theme-menu-button {
+    inline-size: 70px;
     block-size: 26px;
     font-size: 18px;
     font-weight: 400;
