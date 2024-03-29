@@ -5,7 +5,7 @@
     --accent-text-color: #353430;
     --text-color: #353430;
     --hover-color: rgba(53, 52, 48, 0.4);
-
+    --background-color: #fff1f7;
     --background-image: url(../images/cover-image-light.png);
     --display-rec: none;
 }
