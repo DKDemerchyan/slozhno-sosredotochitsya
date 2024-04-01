@@ -222,6 +222,10 @@
 }
 
 @media (width >= 1024px) {
+    .main__text-section-block_why {
+        grid-template-columns: 0.98fr 2.02fr;
+    }
+
     .main__text-section-block_what {
         grid-column: 1 / 3;
     }
