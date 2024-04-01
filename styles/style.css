@@ -246,6 +246,10 @@
     gap: 10px;
 }
 
+.main__text-section-block_how .main__text-section-list-article {
+    gap: 20px;
+}
+
 .main__subtitle {
     font-weight: 400;
 }
