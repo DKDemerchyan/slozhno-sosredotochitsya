@@ -10,6 +10,7 @@
     --background-image: url(../images/cover-image-dark.png);
     --display-rec: flex;
     --section-padding: 10px;
+    --main-font: 'IBM Plex mono', Courier, monospace;
 }
 
 @media (min-width: 768px) {
